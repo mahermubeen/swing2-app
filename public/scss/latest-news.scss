@@ -1,0 +1,33 @@
+.latest-news {
+  padding: 30px 0 30px 12px;
+  border-bottom: 0.5px solid #808080e8;
+  h1 {
+    padding: 0 0 15px;
+  }
+  .latest-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    overflow-x: scroll;
+    .video-wrapper {
+      width: 140px;
+      .swing-bg {
+        width: 140px;
+        height: 140px;
+        background: url("../images/swing2-bg.png") no-repeat;
+        background-size: contain;
+      }
+      .video-block {
+        color: gray;
+        font-size: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+    }
+    h3 {
+      font-size: 13px;
+      line-height: 17px;
+      padding: 5px 0;
+    }
+  }
+}

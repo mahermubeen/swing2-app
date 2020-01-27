@@ -1,0 +1,123 @@
+@import "variables";
+//reset style
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  background: url("../images/login-bg.png") no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Poppins-regular, sans-serif;
+}
+
+h1 {
+  font-family: myriad-pro, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+//slider css
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-prev-next-button {
+  display: none !important;
+}
+
+.gallery-cell:before {
+  display: none !important;
+}
+
+.gallery-cell {
+  background: white !important;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 240px !important;
+}
+
+.flickity-page-dots .dot {
+  background: gray !important;
+}
+
+.flickity-page-dots .dot.is-selected {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  background: #ff0000 !important;
+}

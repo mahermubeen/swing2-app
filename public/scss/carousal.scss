@@ -1,0 +1,48 @@
+.carousal-wraper {
+  background: #f5f5f5;
+  padding: 20px 0 60px;
+  border-bottom: 0.5px solid #808080e8;
+  .gallery {
+    .flickity-viewport {
+      .flickity-slider {
+        .gallery-cell {
+          .video-wrapper {
+            h3 {
+              font-size: 15px;
+              line-height: 20px;
+              padding: 5px 10px 5px;
+            }
+            .desc-detail {
+              display: grid;
+              grid-template-columns: max-content 1fr 1fr;
+              grid-gap: 10px;
+              padding: 3px 10px;
+              .det-heading {
+                font-size: 12px;
+                color: gray;
+              }
+              .views {
+                display: grid;
+                grid-template-columns: repeat(3, max-content);
+                grid-gap: 5px;
+                align-items: center;
+                p {
+                  font-size: 12px;
+                }
+                .dot {
+                  width: 3px;
+                  height: 3px;
+                  background: gray;
+                  border-radius: 50%;
+                }
+                img {
+                  width: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #e93c30;
+  align-items: center;
+  padding: 15px;
+  .menu-icon {
+    width: 20px;
+    cursor: pointer;
+  }
+  .search-icon {
+    justify-self: right;
+    width: 20px;
+    cursor: pointer;
+  }
+  h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.navbar {
+  padding: 2px 0px;
+  background: white;
+  .nav-list-ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    li {
+      padding: 15px 5px;
+      a {
+        color: #828282;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+    .active {
+      border-bottom: 2px solid #e93c30;
+      .a {
+        color: #e93c30;
+      }
+    }
+  }
+}
